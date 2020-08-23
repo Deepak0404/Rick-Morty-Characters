@@ -1,0 +1,27 @@
+*{margin:0;padding:0}
+a:focus,a:active,button:focus,button:active{text-decoration:none!important;outline:none!important}
+.form-control:focus{box-shadow:none}
+body{background-image:url(../img/spikes.png);background-color:#eee;color:#3c4858;line-height:1;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:14px}
+nav{-webkit-box-shadow:0 7px 14px rgba(0,0,0,0.1);box-shadow:0 7px 14px rgba(0,0,0,0.1)}
+#cards h1{font-size:24px}
+#cards .card{cursor:pointer}
+#cards .card:hover{-webkit-box-shadow:0 14px 26px -12px rgba(153,153,153,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(153,153,153,0.2);box-shadow:0 14px 26px -12px rgba(153,153,153,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(153,153,153,0.2)}
+#cardsListing .card-body{margin-top:-65px;background:rgba(0,0,0,0.7);padding:12px 15px}
+#cardsListing h6.card-title{font-size:18px;margin-bottom:5px}
+#cardsListing i.card-icon{position:absolute;top:8px;z-index:99;font-size:20px;right:25px;color:#000}
+#cardsListing .list-group li{padding:12px 15px}
+#cardsListing .list-group li:nth-child(odd){background:linear-gradient(45deg,#eee,#fff)}
+#cardsListing .list-group li:nth-child(even){background:#fff}
+#cardsListing .list-group li:hover{background-color:#eee}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 992px) {
+  body{font-size:12px}
+  #cards h1{font-size:20px}
+  #cardsListing .card-body{margin-top:-55px;padding:10px}
+  #cardsListing h6.card-title{font-size:14px}
+  .list-group-item{padding:10px}
+  #cardsListing .list-group li{padding:12px}
+}
+@media screen and (max-width: 768px) {}
