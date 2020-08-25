@@ -16,7 +16,7 @@ fetch('https://rickandmortyapi.com/api/character/')
                                 <div class="card-body">
                                     <h6 class="card-title">${list.name}</h6>
                                     <p class="card-text">
-                                        <span>ID: ${list.id}, </span>
+                                        <span data-id="${list.id}">ID: ${list.id}, </span>
                                         <span>Created: ${new Date(years).getFullYear()}</span>
                                     </p>
                                 </div>
@@ -46,4 +46,15 @@ fetch('https://rickandmortyapi.com/api/character/')
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    // Sorting by ID
+    $("#shortCards").click(function(){
+        var sorted = $('.card-wrapper').sort(sort_card);
+        $('#cardsListing').html(sorted);
+    });
+
+    function sort_card(a,b){
+        return ($(a).data('id') < $(b).data('id')) ? 1 : -1;
+    }
+
 });

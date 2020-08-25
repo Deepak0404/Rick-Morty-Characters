@@ -20,8 +20,15 @@
         <div class="container">
             <div class="row">
                 <h1 class="text-center my-4 w-100">Characters listing of Rick and Morty Show</h1>
-                <div class="offset-md-3 col-md-6 mb-3">
-                    <input class="form-control" id="myInput" type="text" placeholder="Search Character..">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-8 mb-3">
+                            <input class="form-control" id="myInput" type="text" placeholder="Search Character..">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <button id="shortCards" class="btn btn-info w-100">Sort by ID</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row" id="cardsListing"></div>
